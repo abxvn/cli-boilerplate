@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "DebugCLI",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/index.ts",
+      "sourceMaps": true,
+      "trace": "all",
+      "outFiles": [
+        "${workspaceFolder}/bin/**/*.js"
+      ],
+      "args": [
+        "-l",
+        "vi",
+        "-p",
+        "log",
+        "tmp/test.txt"
+      ]
+    }
+  ]
+}
