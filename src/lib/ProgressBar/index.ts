@@ -8,6 +8,8 @@ const replaceTokens = (str: string, tokens: any): string => str.replace(/\{(\w+)
 
 export const createProgress = (data: IProgressBarItem[] = [], options: any = {}): ProgressBar => {
   const progbar = new ProgressBar(data, assign({
+    barCompleteChar: '-',
+    barIncompleteChar: '·',
     clearOnComplete: false,
     stopOnComplete: true,
     hideCursor: true,
