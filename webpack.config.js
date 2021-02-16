@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const pkg = require('./package.json')
 const {
@@ -34,6 +35,7 @@ module.exports = {
     nodeExternals()
   ],
   plugins: [
+    new CleanWebpackPlugin(),
     new webpack.DefinePlugin({
       APP_VERSION: JSON.stringify(pkg.version),
       APP_NAME: JSON.stringify(pkg.name),

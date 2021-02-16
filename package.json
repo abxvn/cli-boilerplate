@@ -8,7 +8,7 @@
     "package-name": "./bin/package-name.js"
   },
   "files": [
-    "bin/",
+    "bin/package-name.js",
     "LICENSE",
     "README.md",
     "yarn.lock"
@@ -41,6 +41,7 @@
     "@types/cli-progress": "^3.8.0",
     "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.22",
+    "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.3",
     "eslint-config-standard": "^16.0.1",
     "eslint-config-standard-jsx": "^10.0.0",
