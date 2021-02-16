@@ -38,6 +38,8 @@
   },
   "homepage": "https://github.com/tekuasia/package-name#readme",
   "devDependencies": {
+    "@types/cli-progress": "^3.8.0",
+    "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.22",
     "cross-env": "^7.0.3",
     "eslint-config-standard": "^16.0.1",
@@ -59,6 +61,7 @@
     "chalk": "^4.1.0",
     "cli-progress": "^3.9.0",
     "commander": "^7.0.0",
-    "figures": "^3.2.0"
+    "figures": "^3.2.0",
+    "lodash": "^4.17.20"
   }
 }

@@ -5,13 +5,19 @@ import {
 } from 'figures'
 
 declare var NODE_ENV: string
-const icons = {
+export const icons = {
   success: green(checkIcon),
   warn: bgYellow('warn'),
   info: blue(infoIcon)
 }
 
-export const log = console.log.bind(console)
+export const log = (msg: any): void => {
+  // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+  if (msg) {
+    console.log(msg)
+  }
+}
+export const line = (): void => console.log('')
 export const success = (message: string): void => log(icons.success + ' ' + message)
 export const warn = (message: string): void => log(icons.warn + ' ' + message)
 export const error = (err: Error): void => {
